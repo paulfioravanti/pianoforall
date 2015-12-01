@@ -5,13 +5,15 @@
 use_synth :piano
 
 # Using chord names
-play chord(:C4, :major)
+# `chord` method takes an optional argument that defaults to :major
+# NOTE :C4 is Middle C
+play chord(:C4)
 sleep 0.5
 play chord(:A3, :minor)
 sleep 0.5
-play chord(:F3, :major)
+play chord(:F3)
 sleep 0.5
-play chord(:G3, :major)
+play chord(:G3)
 
 sleep 1
 

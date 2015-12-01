@@ -1,4 +1,4 @@
-# Rhythm 1 - "Left note / Right Chord"
+# Lesson 2 - Rhythm 1 - "Left note / Right Chord"
 use_synth :piano
 
 # Using chord names
