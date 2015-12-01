@@ -1,20 +1,8 @@
-# - Chord of C
+# - Chord of Middle C
 # - Chord of Am
 # - Chord of F
 # - Chord of G
-
 use_synth :piano
-
-# Using arrays of note names
-play [:C4, :E4, :G4]
-sleep 0.5
-play [:A3, :C4, :E4]
-sleep 0.5
-play [:F3, :A3, :C4]
-sleep 0.5
-play [:G3, :B3, :D4]
-
-sleep 1
 
 # Using chord names
 play chord(:C4, :major)
@@ -24,6 +12,17 @@ sleep 0.5
 play chord(:F3, :major)
 sleep 0.5
 play chord(:G3, :major)
+
+sleep 1
+
+# Using arrays of note names
+play [:C4, :E4, :G4]
+sleep 0.5
+play [:A3, :C4, :E4]
+sleep 0.5
+play [:F3, :A3, :C4]
+sleep 0.5
+play [:G3, :B3, :D4]
 
 sleep 1
 

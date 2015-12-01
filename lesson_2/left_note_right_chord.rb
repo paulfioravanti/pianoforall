@@ -1,25 +1,6 @@
 # Rhythm 1 - "Left note / Right Chord"
 use_synth :piano
 
-# Using arrays of note names
-play :C3
-sleep 0.5
-play [:C4, :E4, :G4]
-sleep 0.5
-play :A2
-sleep 0.5
-play [:A3, :C4, :E4]
-sleep 0.5
-play :F2
-sleep 0.5
-play [:F3, :A3, :C4]
-sleep 0.5
-play :G2
-sleep 0.5
-play [:G3, :B3, :D4]
-
-sleep 0.5
-
 # Using chord names
 play :C3
 sleep 0.5
@@ -36,6 +17,25 @@ sleep 0.5
 play :G2
 sleep 0.5
 play chord(:G3, :major)
+
+sleep 0.5
+
+# Using arrays of note names
+play :C3
+sleep 0.5
+play [:C4, :E4, :G4]
+sleep 0.5
+play :A2
+sleep 0.5
+play [:A3, :C4, :E4]
+sleep 0.5
+play :F2
+sleep 0.5
+play [:F3, :A3, :C4]
+sleep 0.5
+play :G2
+sleep 0.5
+play [:G3, :B3, :D4]
 
 sleep 0.5
 
