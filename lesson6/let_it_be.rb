@@ -39,4 +39,5 @@ play chord(:E4, :minor)
 sleep 0.25
 play chord(:D4, :minor)
 sleep 0.25
+play :C3
 play chord(:C4)
