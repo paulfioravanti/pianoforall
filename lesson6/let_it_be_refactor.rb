@@ -6,7 +6,7 @@ define :gospel_chord do |pitch, pitch_scale = :major|
   play pitch
   2.times do
     play chord(pitch.succ, pitch_scale)
-    sleep 0.5
+    sleep 0.6
   end
 end
 
@@ -16,12 +16,12 @@ end
 
 play :F3
 play chord(:F4)
-sleep 0.5
+sleep 0.6
 
 play chord(:E4, :minor)
-sleep 0.25
+sleep 0.3
 play chord(:D4, :minor)
-sleep 0.25
+sleep 0.3
 
 play :C3
 play chord(:C4)
