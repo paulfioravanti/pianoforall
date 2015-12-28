@@ -3,20 +3,20 @@
 use_synth :piano
 
 play :D3
-sleep 0.5
+sleep 0.4
 play chord(:D4, :minor)
-sleep 0.5
+sleep 0.4
 
 play :C3
-sleep 0.5
+sleep 0.4
 play chord(:C4)
-sleep 0.5
+sleep 0.4
 
 play :Bb2
-sleep 0.5
+sleep 0.4
 play chord(:Bb3)
-sleep 0.25
+sleep 0.2
 
 play :A2
-sleep 0.75
+sleep 0.6
 play chord(:A3)
