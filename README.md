@@ -31,3 +31,8 @@ If you are a [TMux](https://tmux.github.io/) user, and specifically use [TMuxina
 
 Substitute the path above with wherever you have the Sonic Pi.app installed.
 
+### Syntax Notes
+
+Since there are no `class`es or `require`-ing in Sonic Pi and everything lives in the global namespace, in order to create some re-usable code, I've put some static method definitions in certain files and then "required" them by `eval`-ing the code inline so that the content of those remote methods get sent off to the Sonic Pi app along with the actual content that I want to play (via the `C-r` command from Vim).  Idea for this came from [this StackOverflow Q&A](http://stackoverflow.com/a/613213/567863)
+
+Relative paths can't be used, so if you use this code you'll have to fiddle with the path definitions in the `eval` statements slightly to make sure you bring in the method definitions correctly.
