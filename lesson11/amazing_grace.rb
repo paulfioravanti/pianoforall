@@ -24,5 +24,5 @@ split_chord_g4
 
 split_chord_g4
 split_chord_d4(chord_name: 7)
-split_chord_am4(chord_name: :minor7)
+split_chord_a4(chord_name: :minor7)
 split_chord_g4
