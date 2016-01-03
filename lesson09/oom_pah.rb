@@ -1,6 +1,3 @@
-# This is a set of methods that can be eval-ed into a binding in order
-# to be used.  Eg, in another Sonic Pi file, at the top put:
-# eval(IO.read("path/to/pianoforall/lesson9/oom_pah.rb"), binding)
 def oom_pah_c4
   play :C3
   play chord(:C4)

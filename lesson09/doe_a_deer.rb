@@ -1,9 +1,6 @@
 # Lesson 9 - More Chords: D, E, A and B Flat
 # Rhythm - Oom Pah (Doe, a Deer - Sound of Music)
-
-# Evaluate the content of the file in the current binding so that
-# all the methods used below are accessible
-eval(IO.read("#{Dir.home}/ruby/pianoforall/lesson9/oom_pah.rb"), binding)
+require "#{Dir.home}/ruby/pianoforall/lesson09/oom_pah"
 
 use_synth :piano
 

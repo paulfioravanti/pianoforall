@@ -1,9 +1,6 @@
 # Lesson 11 - Rhythm 4 - 'Split Chord'
 # Streets of London - Ralph McTell
-eval(
-  IO.read("#{Dir.home}/ruby/pianoforall/lesson11/split_chord.rb"),
-  binding
-)
+require "#{Dir.home}/ruby/pianoforall/lesson11/split_chord"
 
 use_synth :piano
 
