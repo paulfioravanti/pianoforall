@@ -3,6 +3,7 @@
 require "#{Dir.home}/ruby/pianoforall/lesson11/split_chord"
 
 use_synth :piano
+SLEEP_TIME = 0.3
 
 split_chord_c4(sleep_time: SLEEP_TIME)
 split_chord_f4(sleep_time: SLEEP_TIME)
