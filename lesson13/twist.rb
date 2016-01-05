@@ -13,5 +13,4 @@ def twist(note = :C4, chord_type: :major, sleep: 0.25)
       sleep sleep
     end
   end
-
 end
