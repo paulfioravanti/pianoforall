@@ -8,9 +8,10 @@ def twist(note = :C4, chord_type: :major, sleep: 0.25)
     play chord(note, chord_type)
     sleep sleep
 
-    2.times do
+    (n < 2 ? 2 : 1).times do
       play chord(note, chord_type)
       sleep sleep
     end
   end
+
 end
