@@ -5,8 +5,8 @@ use_synth :piano
 
 slash_split_chord(:G4)
 slash_split_chord(:D4, bass_note: :Fs3)
-slash_split_chord(:E4, chord_type: :minor)
-slash_split_chord(:E4, chord_type: :minor, bass_note: :D3)
+slash_split_chord(:E4, quality: :minor)
+slash_split_chord(:E4, quality: :minor, bass_note: :D3)
 slash_split_chord(:F4)
 slash_split_chord(:C4)
 slash_split_chord(:D4)
