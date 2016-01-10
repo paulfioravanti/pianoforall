@@ -1,27 +1,15 @@
 # Lesson 6 - Gospel Song Chord Progression
 # Let It Be - Refactor
+require "#{Dir.home}/ruby/pianoforall/lesson06/straight_beat_gospel_style"
 use_synth :piano
+use_bpm 45 # defaults to 60
 
-define :gospel_chord do |pitch, pitch_scale = :major|
-  play pitch
-  2.times do
-    play chord(pitch.succ, pitch_scale)
-    sleep 0.6
-  end
+[:C4, :G4, [:A4, :minor], :F4, :C4, :G4].each do |note|
+  straight_beat_gospel_style(*note)
 end
-
-[:C3, :G3, [:A3, :minor], :F3, :C3, :G3].each do |pitch|
-  gospel_chord(*pitch)
-end
-
-play :F3
-play chord(:F4)
-sleep 0.6
-
+straight_beat_gospel_style(:F4, reps: 1)
 play chord(:E4, :minor)
-sleep 0.3
+sleep 0.25
 play chord(:D4, :minor)
-sleep 0.3
-
-play :C3
-play chord(:C4)
+sleep 0.25
+straight_beat_gospel_style(:C4, reps: 1)
