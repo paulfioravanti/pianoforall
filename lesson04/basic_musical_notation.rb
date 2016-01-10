@@ -7,15 +7,18 @@
 # LEFT HAND SPACES A C E Garage
 use_synth :piano
 
+# Just Like Reading a Book
 play :E3
 play chord(:E4)
 sleep 0.5
+
 play :F4
 sleep 0.5
+
 play :A4
 sleep 0.5
-play [:C3, :C4]
 
+play [:C4, :C3]
 sleep 1
 
 # Bars and Beats
