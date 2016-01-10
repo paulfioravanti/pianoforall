@@ -1,51 +1,14 @@
 # Lesson 7 - Rhythm 3 - 'Oom Pah'
 # Song Song Blue
+require "#{Dir.home}/ruby/pianoforall/lesson07/oom_pah"
 use_synth :piano
 
 2.times do
-  play :C3
-  play chord(:C4)
-  sleep 0.5
-
-  play chord(:C4)
-  sleep 0.5
-
-  play :G2
-  play chord(:C4)
-  sleep 0.5
-
-  play chord(:C4)
-  sleep 0.5
+  oom_pah(:C4)
 end
-
 4.times do
-  play :G2
-  play chord(:G3)
-  sleep 0.5
-
-  play chord(:G3)
-  sleep 0.5
-
-  play :D2
-  play chord(:G3)
-  sleep 0.5
-
-  play chord(:G3)
-  sleep 0.5
+  oom_pah(:G3)
 end
-
 2.times do
-  play :C3
-  play chord(:C4)
-  sleep 0.5
-
-  play chord(:C4)
-  sleep 0.5
-
-  play :G2
-  play chord(:C4)
-  sleep 0.5
-
-  play chord(:C4)
-  sleep 0.5
+  oom_pah(:C4)
 end
