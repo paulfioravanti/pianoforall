@@ -1,127 +1,23 @@
-def oom_pah_c4
-  play :C3
-  play chord(:C4)
-  sleep 0.5
+# Lesson 9 - More Chords: D, E, A and B Flat
+def oom_pah(note = :C4, quality = :major, delay: 0.5)
+  *pitch, octave = note.to_s.chars
+  oom = "#{pitch.join}#{octave.to_i - 1}"
+  # The `chord` method returns a ring of MIDI integers (not note symbols).
+  # In order to get the fifth note of the chord one octave down, we take the
+  # integer and subtract 12 (one octave contains 12 MIDI keys)
+  pah = chord(oom, quality).last - 12
 
-  play chord(:C4)
-  sleep 0.5
+  play chord(note, quality)
+  play oom
+  sleep delay
 
-  play :G2
-  play chord(:C4)
-  sleep 0.5
+  play chord(note, quality)
+  sleep delay
 
-  play chord(:C4)
-  sleep 0.5
-end
+  play chord(note, quality)
+  play pah
+  sleep delay
 
-def oom_pah_d4
-  play :D3
-  play chord(:D4)
-  sleep 0.5
-
-  play chord(:D4)
-  sleep 0.5
-
-  play :A2
-  play chord(:D4)
-  sleep 0.5
-
-  play chord(:D4)
-  sleep 0.5
-end
-
-def oom_pah_e4
-  play :E3
-  play chord(:E4)
-  sleep 0.5
-
-  play chord(:E4)
-  sleep 0.5
-
-  play :B2
-  play chord(:E4)
-  sleep 0.5
-
-  play chord(:E4)
-  sleep 0.5
-end
-
-def oom_pah_f4
-  play :F3
-  play chord(:F4)
-  sleep 0.5
-
-  play chord(:F4)
-  sleep 0.5
-
-  play :C3
-  play chord(:F4)
-  sleep 0.5
-
-  play chord(:F4)
-  sleep 0.5
-end
-
-def oom_pah_g4
-  play :G3
-  play chord(:G4)
-  sleep 0.5
-
-  play chord(:G4)
-  sleep 0.5
-
-  play :D3
-  play chord(:G4)
-  sleep 0.5
-
-  play chord(:G4)
-  sleep 0.5
-end
-
-def oom_pah_a4
-  play :A3
-  play chord(:A4)
-  sleep 0.5
-
-  play chord(:A4)
-  sleep 0.5
-
-  play :E3
-  play chord(:A4)
-  sleep 0.5
-
-  play chord(:A4)
-  sleep 0.5
-end
-
-def oom_pah_am4
-  play :A3
-  play chord(:A4, :minor)
-  sleep 0.5
-
-  play chord(:A4, :minor)
-  sleep 0.5
-
-  play :E3
-  play chord(:A4, :minor)
-  sleep 0.5
-
-  play chord(:A4, :minor)
-  sleep 0.5
-end
-
-def oom_pah_b4
-  play :B3
-  play chord(:B4)
-  sleep 0.5
-
-  play chord(:B4)
-  sleep 0.5
-
-  play :F3
-  play chord(:B4)
-  sleep 0.5
-
-  play chord(:B4)
-  sleep 0.5
+  play chord(note, quality)
+  sleep delay
 end

@@ -4,7 +4,7 @@ require "#{Dir.home}/ruby/pianoforall/lesson09/oom_pah"
 
 use_synth :piano
 
-oom_pah_d4
-oom_pah_g4
-oom_pah_am4
-oom_pah_d4
+oom_pah(:D4)
+oom_pah(:G4)
+oom_pah(:A4, :minor)
+oom_pah(:D4)
