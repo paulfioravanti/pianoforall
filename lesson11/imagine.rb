@@ -3,8 +3,8 @@
 require "#{Dir.home}/ruby/pianoforall/lesson11/split_chord.rb"
 
 use_synth :piano
+use_bpm 50
 
-split_chord_c4(split_reps: 1)
-split_chord_c4(split_reps: 1, chord_name: :major7)
-split_chord_f4
-
+split_chord(:C4, reps: 1)
+split_chord(:C4, :major7, reps: 1)
+split_chord(:F4)
