@@ -18,15 +18,11 @@ def three_beat_bounce(note = :C4, quality = :major, bass_note: note, num_bass_oc
   play bass_notes || bass_note
   sleep delay
 
-  play chord(note, quality)
-  sleep half_delay
+  2.times do
+    play chord(note, quality)
+    sleep half_delay
 
-  play bass_note
-  sleep half_delay
-
-  play chord(note, quality)
-  sleep half_delay
-
-  play bass_note
-  sleep half_delay
+    play bass_note
+    sleep half_delay
+  end
 end
