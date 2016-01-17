@@ -1,7 +1,7 @@
 # Lesson 14 - 'Slash' chords and Bass runs
 # Split Chord Rhythm
 
-def slash_split_chord(note, quality: :major, bass_note: note, beat: 0.5, reps: 1)
+def slash_split_chord(note, quality: :major, bass_note: note, delay: 0.5, reps: 1)
   if note == bass_note
     *pitch, octave = note.to_s.chars
     bass_note = "#{pitch.join}#{octave.to_i - 1}"
@@ -17,16 +17,16 @@ def slash_split_chord(note, quality: :major, bass_note: note, beat: 0.5, reps: 1
   # note/bass_note
   play treble_chord
   play bass_note
-  sleep beat
+  sleep delay
 
   reps.times do
     play treble_note
-    sleep beat
+    sleep delay
 
     play treble_chord.to_a.last(2)
-    sleep beat
+    sleep delay
   end
 
   play treble_note
-  sleep beat
+  sleep delay
 end
