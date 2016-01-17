@@ -8,8 +8,8 @@ def three_beat_bounce(note = :C4, quality = :major, bass_note: note, num_bass_oc
   if num_bass_octaves > 1
     *pitch, octave = bass_note.to_s.chars
     bass_notes =
-      (1...num_bass_octaves).reduce([bass_note]) do |memo, num|
-        memo << "#{pitch.join}#{octave.to_i - num}"
+      (1...num_bass_octaves).reduce([bass_note]) do |notes, num|
+        notes << "#{pitch.join}#{octave.to_i - num}"
       end
   end
 
