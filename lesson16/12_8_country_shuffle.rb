@@ -1,8 +1,10 @@
 # Lesson 16 - Rhythm 8 - 12/8 Country Shuffle
 def country_shuffle(note = :C4, quality = :major, bass_note: note, delay: 0.25)
   two_beat_delay, four_beat_delay = delay * 2, delay * 4
-  bass_root, bass_5th = extract_bass_root_and_5th(note, quality, bass_note)
-  treble_root, treble_3rd_5th = extract_treble_split_chord(note, quality)
+  bass_root, bass_5th =
+    extract_bass_root_and_5th(note, quality, bass_note)
+  treble_root, treble_3rd_5th =
+    extract_treble_split_chord(note, quality)
 
   [bass_root, bass_5th].each do |bass|
     play bass, sustain: four_beat_delay
