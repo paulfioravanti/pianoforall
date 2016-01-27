@@ -1,57 +1,38 @@
 # Section 2, Lesson 1 - Rhythm 1 - Basic Triad Blues
+require "#{Dir.home}/ruby/pianoforall/utilities"
 use_synth :piano
+use_bpm 70
 
-BREVE = 2 # Double Whole note
-SEMIBREVE = BREVE / 2.0 # Whole note
-MINIM = SEMIBREVE / 2.0 # Half note
-CROTCHET = MINIM / 2.0 # Quarter note
-QUAVER = CROTCHET / 2.0 # Eighth note
-
-in_thread(name: :rh) do
-  4.times do
-    play_pattern_timed [chord(:C4)], BREVE, amp: 3, sustain: 3
-  end
-  2.times do
-    play_pattern_timed [chord(:F4)], BREVE, amp: 3, sustain: 3
-  end
-  2.times do
-    play_pattern_timed [chord(:C4)], BREVE, amp: 3, sustain: 3
-  end
-  1.times do
-    play_pattern_timed [chord(:G4)], BREVE, amp: 3, sustain: 3
-  end
-  1.times do
-    play_pattern_timed [chord(:F4)], BREVE, amp: 3, sustain: 3
-  end
-  1.times do
-    play_pattern_timed [chord(:C4)], BREVE, amp: 3, sustain: 3
-  end
-  play chord(:C4), amp: 3, sustain: 3
+define :triad_blues_right_hand do |note, quality = :major|
+  play_pattern_timed [chord(note, quality)], BREVE, amp: 3, sustain: BREVE
 end
-in_thread(name: :lh) do
-  4.times do
-    note_chord = chord(:C2)
-    play_pattern_timed note_chord.push(note_chord[1]), MINIM
+
+define :triad_blues_left_hand do |note, quality = :major|
+  *pitch, octave = note.to_s.chars
+  bass_chord = chord("#{pitch.join}#{octave.to_i - 2}", quality)
+
+  play_pattern_timed bass_chord.push(bass_chord[1]), MINIM
+end
+
+# Notes are for right hand; left hand notes are derived from right hand
+NOTES = [
+  [:C4, 4], [:F4, 2], [:C4, 2], :G4, :F4, :C4
+]
+
+in_thread(name: :right_hand) do
+  NOTES.each do |note, reps = 1|
+    reps.times do
+      triad_blues_right_hand(note)
+    end
   end
-  2.times do
-    note_chord = chord(:F2)
-    play_pattern_timed note_chord.push(note_chord[1]), MINIM
+  play chord(:C4), amp: 3, sustain: BREVE
+end
+
+in_thread(name: :left_hand) do
+  NOTES.each do |note, reps = 1|
+    reps.times do
+      triad_blues_left_hand(note)
+    end
   end
-  2.times do
-    note_chord = chord(:C2)
-    play_pattern_timed note_chord.push(note_chord[1]), MINIM
-  end
-  1.times do
-    note_chord = chord(:G2)
-    play_pattern_timed note_chord.push(note_chord[1]), MINIM
-  end
-  1.times do
-    note_chord = chord(:F2)
-    play_pattern_timed note_chord.push(note_chord[1]), MINIM
-  end
-  1.times do
-    note_chord = chord(:C2)
-    play_pattern_timed note_chord.push(note_chord[1]), MINIM
-  end
-  play :C2
+  play :C2, sustain: BREVE
 end
