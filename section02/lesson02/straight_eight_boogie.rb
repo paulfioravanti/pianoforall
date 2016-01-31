@@ -1,7 +1,7 @@
 # Section 2, Lesson 2 - Rhythm 2 - Straight Eight Boogie
 require "#{Dir.home}/ruby/pianoforall/utilities"
 use_synth :piano
-use_bpm 120
+use_bpm 160
 
 define :straight_eight_boogie_treble do |note, quality = :major|
   8.times do
