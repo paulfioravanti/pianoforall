@@ -3,7 +3,7 @@ require "#{Dir.home}/ruby/pianoforall/utilities"
 
 def straight_eight_boogie_alternating_treble(note, quality = :major, regression: true, first: false)
   sleep MINIM if first
-  8.times do
+  (regression ? 8 : 4).times do
     play chord(note, quality), amp: 2, sustain: SEMIBREVE
     sleep SEMIBREVE
   end
