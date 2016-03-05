@@ -3,8 +3,8 @@ require "#{Dir.home}/ruby/pianoforall/utilities"
 use_synth :piano
 
 def boogie_shuffle_treble(note, quality = :major)
-  duration = CROTCHET * 12
-  play chord(note, quality), release: duration, amp: 4
+  duration = BREVE + SEMIBREVE
+  play chord(note, quality), release: duration, amp: 2
   sleep duration
 end
 
@@ -18,11 +18,14 @@ def boogie_shuffle_bass(note, quality = :major)
 end
 
 def boogie_shuffle(root, shape)
-  [MINIM, CROTCHET].each do |duration|
-    play root
-    play shape
-    sleep duration
-  end
+  amp = 0.5
+  play root, amp: amp
+  play shape, amp: amp
+  sleep MINIM
+
+  play root, amp: amp
+  play shape, amp: amp
+  sleep CROTCHET
 end
 
 in_thread(name: :right_hand) do
@@ -37,7 +40,7 @@ in_thread(name: :right_hand) do
   boogie_shuffle_treble(:G4)
   boogie_shuffle_treble(:F4)
   boogie_shuffle_treble(:C4)
-  play chord(:C4), amp: 4
+  play chord(:C4), amp: 2
 end
 
 in_thread(name: :left_hand) do
@@ -52,5 +55,5 @@ in_thread(name: :left_hand) do
   boogie_shuffle_bass(:G2)
   boogie_shuffle_bass(:F2)
   boogie_shuffle_bass(:C2)
-  play :C2
+  play :C2, amp: 0.5
 end
