@@ -1,4 +1,4 @@
-# Section 2, Lesson 1 - Memory Trick for all Chords
+# Section 3, Lesson 1 - Memory Trick for all Chords
 require "#{Dir.home}/ruby/pianoforall/utilities"
 use_synth :piano
 
