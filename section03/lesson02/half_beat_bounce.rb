@@ -1,11 +1,12 @@
-# Section 3 - Inversions - Half Beat Bounce
+# Section 03 - Lesson 02 - Inversions made easy
+# Half Beat Bounce
 require "#{Dir.home}/ruby/pianoforall/utilities"
 
-def half_beat_bounce_treble(note = :C4, quality = :major, inversion: 0)
-  play invert_chord(chord(note, quality), inversion)
+def half_beat_bounce_treble(note = :C4, quality = :major, shift: 0)
+  play invert_chord(chord(note, quality), shift)
   sleep MINIM
 
-  play invert_chord(chord(note, quality), inversion)
+  play invert_chord(chord(note, quality), shift)
   sleep MINIM
 end
 
