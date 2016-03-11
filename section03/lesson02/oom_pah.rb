@@ -3,7 +3,6 @@
 require "#{Dir.home}/ruby/pianoforall/utilities"
 
 def oom_pah_treble(note = :C4, quality = :major, shift: 0)
-
   treble_chord = invert_chord(chord(note, quality), shift)
   4.times do
     play treble_chord
