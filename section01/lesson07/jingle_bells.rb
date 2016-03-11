@@ -1,6 +1,6 @@
 # Lesson 7 - Rhythm 3 - 'Oom Pah'
 # Jingle Bells
-require "#{Dir.home}/ruby/pianoforall/lesson07/oom_pah"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson07/oom_pah"
 use_synth :piano
 
 3.times do

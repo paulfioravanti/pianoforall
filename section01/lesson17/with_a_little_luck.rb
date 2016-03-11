@@ -1,6 +1,6 @@
 # Lesson 17 - Rhythm 9 - 'Bossa Nova Bounce'
 # With a Little Luck - Paul McCartney
-require "#{Dir.home}/ruby/pianoforall/lesson17/bossa_nova_bounce"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson17/bossa_nova_bounce"
 use_synth :piano
 
 bossa_nova_bounce(:C4)

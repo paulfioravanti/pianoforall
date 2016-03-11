@@ -1,6 +1,6 @@
 # Lesson 14 - 'Slash' chords and Bass runs
 # Freebird - Lynyrd Skynyrd
-require "#{Dir.home}/ruby/pianoforall/lesson14/slash_split_chord"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson14/slash_split_chord"
 use_synth :piano
 
 slash_split_chord(:G4)

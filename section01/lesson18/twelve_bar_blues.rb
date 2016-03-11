@@ -1,6 +1,6 @@
 # Lesson 18 - Rhythm 10 - Twist 2
 # Twelve Bar Blues - Bryan Ferry
-require "#{Dir.home}/ruby/pianoforall/lesson18/twist_2"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson18/twist_2"
 
 use_synth :piano
 use_bpm 70

@@ -1,6 +1,6 @@
 # Lesson 14 - 'Slash' chords and Bass runs
 # Don't Look Back in Anger - Oasis
-require "#{Dir.home}/ruby/pianoforall/lesson14/slash_half_beat_bounce"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson14/slash_half_beat_bounce"
 
 use_synth :piano
 DELAY = 0.7

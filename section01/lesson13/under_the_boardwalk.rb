@@ -1,7 +1,7 @@
 # Lesson 13 - Rhythm 6 - Twist
 # Under the Boardwalk - The Drifters
 
-require "#{Dir.home}/ruby/pianoforall/lesson13/twist"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson13/twist"
 
 use_synth :piano
 

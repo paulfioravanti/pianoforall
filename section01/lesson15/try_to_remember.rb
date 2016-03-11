@@ -1,6 +1,6 @@
 # Lesson 15 - Rhythm 7 - Three Beat Bounce
 # Try to Remember
-require "#{Dir.home}/ruby/pianoforall/lesson15/three_beat_bounce"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson15/three_beat_bounce"
 use_synth :piano
 
 2.times do

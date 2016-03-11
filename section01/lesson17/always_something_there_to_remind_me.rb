@@ -1,6 +1,6 @@
 # Lesson 17 - Rhythm 9 - 'Bossa Nova Bounce'
 # Always Something There to Remind Me
-require "#{Dir.home}/ruby/pianoforall/lesson17/bossa_nova_bounce"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson17/bossa_nova_bounce"
 use_synth :piano
 
 BOUNCE = 1.25

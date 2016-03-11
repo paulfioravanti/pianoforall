@@ -1,5 +1,5 @@
 # Lesson 2 - Rhythm 1 - "Left note / Right Chord"
-require "#{Dir.home}/ruby/pianoforall/lesson02/left_note_right_chord"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson02/left_note_right_chord"
 use_synth :piano
 
 # Using method call

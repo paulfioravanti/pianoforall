@@ -1,6 +1,6 @@
 # Lesson 18 - Rhythm 10 - twist_2 2
 # Let's Twist Again
-require "#{Dir.home}/ruby/pianoforall/lesson18/twist_2"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson18/twist_2"
 
 use_synth :piano
 

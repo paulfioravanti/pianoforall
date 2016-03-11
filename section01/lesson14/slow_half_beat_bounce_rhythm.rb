@@ -1,6 +1,6 @@
 # Lesson 14 - 'Slash' chords and Bass runs
 # Slow - Half Beat Bounce Rhythm
-require "#{Dir.home}/ruby/pianoforall/lesson14/slash_half_beat_bounce"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson14/slash_half_beat_bounce"
 
 use_synth :piano
 

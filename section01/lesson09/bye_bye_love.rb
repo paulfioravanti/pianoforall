@@ -1,6 +1,6 @@
 # Lesson 9 - More Chords: D, E, A and B Flat
 # Rhythm - Oom Pah (Bye Bye Love - Simon & Garfunkel)
-require "#{Dir.home}/ruby/pianoforall/lesson09/oom_pah"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson09/oom_pah"
 use_synth :piano
 
 2.times do

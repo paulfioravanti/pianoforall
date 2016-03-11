@@ -1,7 +1,7 @@
 # Lesson 13 - Rhythm 6 - Twist
 # Stand By Me - Ben E King
 
-require "#{Dir.home}/ruby/pianoforall/lesson13/twist"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson13/twist"
 
 use_synth :piano
 

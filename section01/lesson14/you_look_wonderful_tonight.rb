@@ -1,6 +1,6 @@
 # Lesson 14 - 'Slash' chords and Bass runs
 # You Look Wonderful Tonight - Eric Clapton
-require "#{Dir.home}/ruby/pianoforall/lesson14/slash_split_chord"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson14/slash_split_chord"
 use_synth :piano
 DELAY = 0.55
 

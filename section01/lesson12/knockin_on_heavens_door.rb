@@ -1,6 +1,6 @@
 # Lesson 12 - Rhythm 5 - Half Beat Bounce
 # Knockin' on Heaven's Door - Bob Dylan
-require "#{Dir.home}/ruby/pianoforall/lesson12/half_beat_bounce"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson12/half_beat_bounce"
 
 use_synth :piano
 DELAY = 0.7

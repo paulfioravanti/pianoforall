@@ -1,6 +1,6 @@
 # Lesson 6 - Gospel Song Chord Progression
 # Let It Be - Refactor
-require "#{Dir.home}/ruby/pianoforall/lesson06/straight_beat_gospel_style"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson06/straight_beat_gospel_style"
 use_synth :piano
 use_bpm 45 # defaults to 60
 

@@ -1,6 +1,6 @@
 # Lesson 17 - Rhythm 9 - 'Bossa Nova Bounce'
 # Isn't She Lovely - Stevie Wonder
-require "#{Dir.home}/ruby/pianoforall/lesson17/bossa_nova_bounce"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson17/bossa_nova_bounce"
 use_synth :piano
 
 2.times do

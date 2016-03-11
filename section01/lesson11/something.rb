@@ -1,6 +1,6 @@
 # Lesson 11 - Rhythm 4 - 'Split Chord'
 # Something - The Beatles
-require "#{Dir.home}/ruby/pianoforall/lesson11/split_chord"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson11/split_chord"
 
 use_synth :piano
 

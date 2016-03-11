@@ -1,6 +1,6 @@
 # Lesson 18 - Rhythm 10 - Twist 2
 # Save the Last Dance for Me - The Drifters
-require "#{Dir.home}/ruby/pianoforall/lesson18/twist_2"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson18/twist_2"
 
 use_synth :piano
 GLISSANDO = true

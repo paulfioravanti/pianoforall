@@ -1,6 +1,6 @@
 # Lesson 11 - Rhythm 4 - 'Split Chord'
 # Streets of London - Ralph McTell
-require "#{Dir.home}/ruby/pianoforall/lesson11/split_chord"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson11/split_chord"
 
 use_synth :piano
 

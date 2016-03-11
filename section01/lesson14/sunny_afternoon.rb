@@ -1,6 +1,6 @@
 # Lesson 14 - 'Slash' chords and Bass runs
 # Sunny Afternoon - The Kinks
-require "#{Dir.home}/ruby/pianoforall/lesson14/slash_straight_beat"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson14/slash_straight_beat"
 use_synth :piano
 
 slash_straight_half_beat_bounce(:D4, :minor)

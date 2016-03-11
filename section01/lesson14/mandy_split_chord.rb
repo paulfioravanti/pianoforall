@@ -1,6 +1,6 @@
 # Lesson 14 - 'Slash' chords and Bass runs
 # Mandy - Barry Mannilow (Split Chord)
-require "#{Dir.home}/ruby/pianoforall/lesson14/slash_split_chord"
+require "#{Dir.home}/ruby/pianoforall/section01/lesson14/slash_split_chord"
 use_synth :piano
 
 2.times do
