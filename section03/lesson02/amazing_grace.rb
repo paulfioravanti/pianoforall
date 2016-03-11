@@ -1,4 +1,4 @@
-# Section 3, Lesson 2 - shifts made easy
+# Section 3, Lesson 2 - Inversions made easy
 # Amazing Grace
 require "#{Dir.home}/ruby/pianoforall/section03/lesson02/half_beat_bounce"
 use_synth :piano
