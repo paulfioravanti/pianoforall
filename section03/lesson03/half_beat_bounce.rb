@@ -16,11 +16,11 @@ def half_beat_bounce_bass(note = :C3, multiple: false)
   *pitch, octave = note.to_s.chars
   low_bass = "#{pitch.join}#{octave.to_i - 1}"
 
-  play note
-  play low_bass if multiple
+  play note, amp: 0.5
+  play low_bass, amp: 0.5 if multiple
   sleep MINIM + CROTCHET
 
-  play note
-  play low_bass if multiple
+  play note, amp: 0.5
+  play low_bass, amp: 0.5 if multiple
   sleep CROTCHET
 end
