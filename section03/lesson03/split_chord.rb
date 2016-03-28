@@ -23,9 +23,9 @@ end
 def split_chord_bass(note = :C3, reps: 1, extra: false)
   if extra
     *pitch, octave = note.to_s.chars
-    play "#{pitch.join}#{octave.to_i - 1}"
+    play "#{pitch.join}#{octave.to_i - 1}", amp: 0.5
   end
-  play note
+  play note, amp: 0.5
   sleep SEMIBREVE
 
   reps.times do
