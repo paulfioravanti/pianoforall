@@ -1,4 +1,4 @@
-# Section 03 - Lesson 02 - Inversions made easy
+# Section 03 - Lesson 04 - All the 'B's: Bb, Bbm, B, Bm
 # Oom-pah
 require "#{Dir.home}/ruby/pianoforall/utilities"
 
